@@ -1,17 +1,17 @@
 import { BankSlipUseCase } from '~/domain/usecases';
+import { BankSlipRepositroy } from '~/infra/respositories';
 
 export class BankSlipService implements BankSlipUseCase {
-  constructor() {}
+  bankSlipRepositroy: BankSlipRepositroy;
+
+  constructor(bankSlipRepositroy: BankSlipRepositroy) {
+    this.bankSlipRepositroy = bankSlipRepositroy;
+  }
 
   async execute(
     params: BankSlipUseCase.params
   ): Promise<BankSlipUseCase.model> {
-    console.log(this);
-    const result = await new Promise((resolve) => {}).then(() => {
-      return {
-        name: 'BankSlip',
-      };
-    });
+    const result = await this.bankSlipRepositroy.generator(params.code);
 
     return result;
   }

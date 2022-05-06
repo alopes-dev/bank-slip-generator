@@ -12,7 +12,8 @@
         "sourceType": "module"
     },
     "plugins": [
-        "@typescript-eslint"
+        "@typescript-eslint",
+        "import-helpers", "prettier"
     ],
     "rules": {
       "no-redeclare": "off",
@@ -27,6 +28,7 @@
       "arrow-body-style": 0,
       "no-empty-function":"off",
       "no-useless-constructor": "off",
+      "class-methods-use-this": "off",
       "no-unused-vars": [
         "error",
         { "vars": "all", "args": "none", "ignoreRestSiblings": false }

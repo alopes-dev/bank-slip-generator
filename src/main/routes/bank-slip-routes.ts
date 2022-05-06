@@ -1,10 +1,10 @@
 import { Router } from 'express';
-
-// const { adapt } = require('../adapters/express-router-adapter');
-// const LoginRouterComposer = require('../composers/login-router-composer');
+import { BankSlipRouterComposer } from '../composers';
+import { ExpressRouterAdapter } from '../adapters';
 
 export const route = (router: Router) => {
-  router.get('/boleto', (req, res) => {
-    res.send('Boleto');
-  });
+  router.get(
+    '/boleto/:code',
+    ExpressRouterAdapter.adapt(BankSlipRouterComposer.compose())
+  );
 };
