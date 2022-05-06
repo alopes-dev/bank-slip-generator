@@ -1,6 +1,5 @@
 export type BankSlipModel = {
-  name: string;
-  amount: number;
+  amount: string;
   expirationDate?: string;
   barCode: string;
 };

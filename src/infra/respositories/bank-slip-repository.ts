@@ -1,28 +1,47 @@
 import { BankSlipModel } from '~/infra/model';
-import { validadeBankSlipCode, barCodeGenerator } from '~/infra/helpers';
+import {
+  validadeDigitableLine,
+  barCodeGenerator,
+  validateBarCode,
+  getAmount,
+  addDays,
+} from '~/infra/helpers';
 
 export class BankSlipRepositroy {
-  async generator(code: string): Promise<BankSlipModel> {
-    const codeLength = validadeBankSlipCode(code);
-    const isValidLength = codeLength === 47;
+  async generator(digitableLine: string): Promise<BankSlipModel> {
+    const digitableLineLength = validadeDigitableLine(digitableLine);
+    const isValidLength = digitableLineLength === 47;
 
     if (isValidLength) {
-      const barCode = barCodeGenerator(code);
+      const barCode = barCodeGenerator(digitableLine);
+      validateBarCode(barCode, digitableLineLength);
 
-      console.log(barCode);
+      const expirationFactor = barCode.slice(5, 9);
+
+      const amount = getAmount(digitableLine);
+
+      const baseDate = new Date('10-07-1997');
+      const expirationDate = addDays(
+        JSON.stringify(baseDate),
+        Number(expirationFactor)
+      );
 
       return {
-        name: '',
-        amount: 0,
-        expirationDate: '',
+        amount,
+        expirationDate,
         barCode,
       };
     }
 
+    const barCode = barCodeGenerator(digitableLine);
+    console.log(barCode);
+    validateBarCode(barCode, digitableLineLength);
+
+    const amount = getAmount(digitableLine);
+
     return {
-      name: 'code',
-      amount: 100,
-      barCode: '123456789',
+      amount,
+      barCode,
     };
   }
 }

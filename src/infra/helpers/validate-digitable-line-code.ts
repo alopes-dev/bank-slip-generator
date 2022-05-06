@@ -1,12 +1,12 @@
 import AppError from '../errors/app-errors';
 import { checkIfIsNumberOnly } from './check-if-numbers-only';
 
-export const validadeBankSlipCode = (bankSlipCode: string): number => {
-  const codeLength = bankSlipCode.length;
+export const validadeDigitableLine = (digitableLine: string): number => {
+  const digitableLineLength = digitableLine.length;
 
-  const isNotValid = codeLength < 47 || codeLength > 48;
+  const isNotValid = digitableLineLength < 47 || digitableLineLength > 48;
 
-  if (!bankSlipCode) {
+  if (!digitableLine) {
     throw new AppError(
       'Bad Request',
       'Bank slip code is required',
@@ -24,7 +24,7 @@ export const validadeBankSlipCode = (bankSlipCode: string): number => {
     );
   }
 
-  if (!checkIfIsNumberOnly(bankSlipCode)) {
+  if (!checkIfIsNumberOnly(digitableLine)) {
     throw new AppError(
       'Bad Request',
       'Invalid characters, Bank slip code must be only numbers',
@@ -33,5 +33,5 @@ export const validadeBankSlipCode = (bankSlipCode: string): number => {
     );
   }
 
-  return codeLength;
+  return digitableLineLength;
 };
