@@ -36,6 +36,12 @@ Access the project folder and run the following command:
   $ yarn start:dev # or npm run start:dev
 ```
 
+## Access the project via browser
+
+```sh
+  $ http://localhost:8080/api/boleto/836200000021292600481009143530930013001904210760
+```
+
 To run the tests, type the following command in the terminal:
 
 ```sh
