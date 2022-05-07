@@ -1,1 +1,1 @@
-export * from './bank-slip-router-composer';
+export * from './load-bank-slip-router-composer';

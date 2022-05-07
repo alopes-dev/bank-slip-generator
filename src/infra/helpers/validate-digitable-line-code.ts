@@ -1,7 +1,7 @@
 import AppError from '../errors/app-errors';
 import { checkIfIsNumberOnly } from './check-if-numbers-only';
 
-export const validadeDigitableLine = (digitableLine: string): number => {
+export const validateDigitableLine = (digitableLine: string): number => {
   const digitableLineLength = digitableLine.length;
 
   const isNotValid = digitableLineLength < 47 || digitableLineLength > 48;

@@ -7,22 +7,22 @@ type Reducer = {
 
 export const moduleEleven = (
   array: number[],
-  vd?: number,
+  verifiedDigits?: number,
   fieldNumber?: number
 ) => {
   const reducer = (prev: Reducer, current: number): Reducer => {
     const { value, counter } = prev;
-    const multipliedAmount = current * counter;
+    const multipliedValue = current * counter;
 
     if (counter === 9) {
       return {
-        value: multipliedAmount + value,
+        value: multipliedValue + value,
         counter: 2,
       };
     }
 
     return {
-      value: multipliedAmount + value,
+      value: multipliedValue + value,
       counter: counter + 1,
     };
   };
@@ -31,29 +31,26 @@ export const moduleEleven = (
 
   const modules = reducedValue % 11;
 
-  let digitSelfConference = 11 - modules;
+  const digitSelfConference = 11 - modules;
 
   const isDacValid =
     digitSelfConference === 0 ||
     digitSelfConference === 10 ||
     digitSelfConference === 11;
 
-  if (isDacValid) {
-    digitSelfConference = 1;
-  }
+  const isVerified =
+    (!verifiedDigits && digitSelfConference) ||
+    (verifiedDigits && digitSelfConference === verifiedDigits);
 
-  if (!vd && digitSelfConference) {
+  if (isVerified) {
+    if (isDacValid) return 1;
     return digitSelfConference;
   }
 
-  if (vd && digitSelfConference === Number(vd)) {
-    return digitSelfConference;
-  } else {
-    throw new AppError(
-      'Bad Request',
-      `Invalid verification digit of field: ${fieldNumber}`,
-      400,
-      'badRequest'
-    );
-  }
+  throw new AppError(
+    'Bad Request',
+    `Invalid verification digit of field: ${fieldNumber}`,
+    400,
+    'badRequest'
+  );
 };

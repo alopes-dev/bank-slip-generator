@@ -3,7 +3,7 @@ import AppError from '../errors/app-errors';
 
 export const moduleTen = (
   numberArray: number[],
-  vd: number,
+  verifiedDigits: number,
   fieldNumber?: number
 ) => {
   const reducedValue = numberArray.reduce(
@@ -31,11 +31,8 @@ export const moduleTen = (
   if (digitSelfConference === 10) {
     digitSelfConference = 0;
   }
-  console.log(digitSelfConference, Number(vd));
 
-  if (!fieldNumber && digitSelfConference === Number(vd)) {
-    return digitSelfConference;
-  } else if (!fieldNumber && digitSelfConference !== Number(vd)) {
+  if (!fieldNumber && digitSelfConference !== Number(verifiedDigits)) {
     throw new AppError(
       'Bad Request',
       `Invalid general verification digit`,
@@ -43,7 +40,8 @@ export const moduleTen = (
       'badRequest'
     );
   }
-  if (digitSelfConference !== Number(vd)) {
+
+  if (digitSelfConference !== Number(verifiedDigits)) {
     throw new AppError(
       'Bad Request',
       `Invalid verification digit of field: ${fieldNumber}`,
@@ -51,5 +49,10 @@ export const moduleTen = (
       'badRequest'
     );
   }
+
+  if (!fieldNumber && digitSelfConference === Number(verifiedDigits)) {
+    return digitSelfConference;
+  }
+
   return true;
 };

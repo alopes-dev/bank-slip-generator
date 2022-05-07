@@ -1,18 +1,22 @@
 import { BankSlipModel } from '~/infra/model';
 import {
-  validadeDigitableLine,
+  validateDigitableLine,
   barCodeGenerator,
   validateBarCode,
   getAmount,
   addDays,
+  getExpirationDate,
+  validateThreeFields,
+  validateFourFields,
 } from '~/infra/helpers';
 
-export class BankSlipRepositroy {
-  async generator(digitableLine: string): Promise<BankSlipModel> {
-    const digitableLineLength = validadeDigitableLine(digitableLine);
+export class LoadBankSlipRepository {
+  async load(digitableLine: string): Promise<BankSlipModel> {
+    const digitableLineLength = validateDigitableLine(digitableLine);
     const isValidLength = digitableLineLength === 47;
 
     if (isValidLength) {
+      validateThreeFields(digitableLine);
       const barCode = barCodeGenerator(digitableLine);
       validateBarCode(barCode, digitableLineLength);
 
@@ -20,28 +24,28 @@ export class BankSlipRepositroy {
 
       const amount = getAmount(digitableLine);
 
-      const baseDate = new Date('10-07-1997');
-      const expirationDate = addDays(
-        JSON.stringify(baseDate),
-        Number(expirationFactor)
-      );
+      const expirationDate = getExpirationDate(expirationFactor);
 
       return {
+        barCode,
         amount,
         expirationDate,
-        barCode,
       };
     }
 
+    validateFourFields(digitableLine);
+
     const barCode = barCodeGenerator(digitableLine);
-    console.log(barCode);
+
     validateBarCode(barCode, digitableLineLength);
 
-    const amount = getAmount(digitableLine);
+    const amount = getAmount(barCode);
+
+    const expirationFactor = barCode.slice(5, 9);
 
     return {
-      amount,
       barCode,
+      amount,
     };
   }
 }

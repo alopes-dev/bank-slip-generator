@@ -1,5 +1,5 @@
 const env = {
-  port: process.env.PORT || 3333,
+  port: process.env.PORT || 8080,
 };
 
 export default env;

@@ -7,3 +7,8 @@ export * from './check-even';
 export * from './validate-bar-code';
 export * from './get-amount';
 export * from './add-days';
+export * from './get-expiration-date';
+export * from './get-bar-code';
+export * from './validate-field';
+export * from './validate-three-fields';
+export * from './validate-four-fields';

@@ -1,1 +1,1 @@
-export * from './bank-slip-service';
+export * from './load-bank-slip-service';

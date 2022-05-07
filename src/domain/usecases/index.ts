@@ -1,1 +1,1 @@
-export * from './bank-slip-usecase';
+export * from './load-bank-slip-usecase';
