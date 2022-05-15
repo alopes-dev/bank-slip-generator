@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1652616055337" clover="3.2.0">
+  <project timestamp="1652616055337" name="All files">
+    <metrics statements="261" coveredstatements="252" conditionals="44" coveredconditionals="38" methods="38" coveredmethods="37" elements="343" coveredelements="327" complexity="0" loc="261" ncloc="261" packages="15" files="40" classes="40"/>
+    <package name="application.services">
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="index.ts" path="/home/alopes/Documents/projects/ewally/bank-slip-generator/src/application/services/index.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="5" type="stmt"/>
+      </file>
+      <file name="load-bank-slip-service.ts" path="/home/alopes/Documents/projects/ewally/bank-slip-generator/src/application/services/load-bank-slip-service.ts">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="4" count="6" type="stmt"/>
+        <line num="8" count="7" type="stmt"/>
+        <line num="14" count="7" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="domain.common.types">
+      <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.ts" path="/home/alopes/Documents/projects/ewally/bank-slip-generator/src/domain/common/types/index.ts">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="domain.usecases">
+      <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.ts" path="/home/alopes/Documents/projects/ewally/bank-slip-generator/src/domain/usecases/index.ts">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="infra.errors">
+      <metrics statements="5" coveredstatements="5" conditionals="4" coveredconditionals="3" methods="1" coveredmethods="1"/>
+      <file name="app-errors.ts" path="/home/alopes/Documents/projects/ewally/bank-slip-generator/src/infra/errors/app-errors.ts">
+        <metrics statements="5" coveredstatements="5" conditionals="4" coveredconditionals="3" methods="1" coveredmethods="1"/>
+        <line num="1" count="12" type="stmt"/>
+        <line num="12" count="23" type="cond" truecount="3" falsecount="1"/>
+        <line num="13" count="23" type="stmt"/>
+        <line num="14" count="23" type="stmt"/>
+        <line num="15" count="23" type="stmt"/>
+      </file>
+    </package>
+    <package name="infra.helpers">
+      <metrics statements="154" coveredstatements="151" conditionals="36" coveredconditionals="31" methods="16" coveredmethods="16"/>
+      <file name="add-days.ts" path="/home/alopes/Documents/projects/ewally/bank-slip-generator/src/infra/helpers/add-days.ts">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="9" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="6" count="4" type="stmt"/>
+        <line num="8" count="4" type="stmt"/>
+      </file>
+      <file name="bar-code-generator.ts" path="/home/alopes/Documents/projects/ewally/bank-slip-generator/src/infra/helpers/bar-code-generator.ts">
+        <metrics statements="4" coveredstatements="4" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="1" count="9" type="stmt"/>
+        <line num="2" count="7" type="cond" truecount="1" falsecount="0"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="13" count="3" type="stmt"/>
+      </file>
+      <file name="check-even.ts" path="/home/alopes/Documents/projects/ewally/bank-slip-generator/src/infra/helpers/check-even.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="11" type="stmt"/>
+        <line num="2" count="268" type="stmt"/>
+      </file>
+      <file name="check-if-numbers-only.ts" path="/home/alopes/Documents/projects/ewally/bank-slip-generator/src/infra/helpers/check-if-numbers-only.ts">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="8" type="stmt"/>
+        <line num="2" count="10" type="stmt"/>
+        <line num="4" count="10" type="stmt"/>
+      </file>
+      <file name="get-amount.ts" path="/home/alopes/Documents/projects/ewally/bank-slip-generator/src/infra/helpers/get-amount.ts">
+        <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="1" count="8" type="stmt"/>
+        <line num="3" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="5" count="5" type="stmt"/>
+        <line num="7" count="5" type="stmt"/>
+      </file>
+      <file name="get-bar-code.ts" path="/home/alopes/Documents/projects/ewally/bank-slip-generator/src/infra/helpers/get-bar-code.ts">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="9" type="stmt"/>
+        <line num="2" count="7" type="stmt"/>
+        <line num="3" count="7" type="stmt"/>
+        <line num="5" count="7" type="stmt"/>
+        <line num="10" count="7" type="stmt"/>
+        <line num="12" count="7" type="stmt"/>
+      </file>
+      <file name="get-expiration-date.ts" path="/home/alopes/Documents/projects/ewally/bank-slip-generator/src/infra/helpers/get-expiration-date.ts">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="8" type="stmt"/>
+        <line num="3" count="8" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/home/alopes/Documents/projects/ewally/bank-slip-generator/src/infra/helpers/index.ts">
+        <metrics statements="14" coveredstatements="14" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="7" type="stmt"/>
+        <line num="2" count="7" type="stmt"/>
+        <line num="3" count="7" type="stmt"/>
+        <line num="4" count="7" type="stmt"/>
+        <line num="5" count="7" type="stmt"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="7" type="stmt"/>
+        <line num="8" count="7" type="stmt"/>
+        <line num="9" count="7" type="stmt"/>
+        <line num="10" count="7" type="stmt"/>
+        <line num="11" count="7" type="stmt"/>
+        <line num="12" count="7" type="stmt"/>
+        <line num="13" count="7" type="stmt"/>
+        <line num="14" count="7" type="stmt"/>
+      </file>
+      <file name="module-eleven.ts" path="/home/alopes/Documents/projects/ewally/bank-slip-generator/src/infra/helpers/module-eleven.ts">
+        <metrics statements="17" coveredstatements="17" conditionals="10" coveredconditionals="9" methods="2" coveredmethods="2"/>
+        <line num="1" count="10" type="stmt"/>
+        <line num="8" count="10" type="stmt"/>
+        <line num="13" count="5" type="stmt"/>
+        <line num="14" count="173" type="stmt"/>
+        <line num="15" count="173" type="stmt"/>
+        <line num="17" count="173" type="cond" truecount="1" falsecount="0"/>
+        <line num="18" count="20" type="stmt"/>
+        <line num="24" count="153" type="stmt"/>
+        <line num="30" count="5" type="stmt"/>
+        <line num="32" count="5" type="stmt"/>
+        <line num="34" count="5" type="stmt"/>
+        <line num="37" count="5" type="cond" truecount="3" falsecount="0"/>
+        <line num="42" count="5" type="cond" truecount="4" falsecount="0"/>
+        <line num="45" count="5" type="cond" truecount="1" falsecount="0"/>
+        <line num="46" count="4" type="cond" truecount="0" falsecount="1"/>
+        <line num="47" count="4" type="stmt"/>
+        <line num="50" count="1" type="stmt"/>
+      </file>
+      <file name="module-ten.ts" path="/home/alopes/Documents/projects/ewally/bank-slip-generator/src/infra/helpers/module-ten.ts">
+        <metrics statements="22" coveredstatements="21" conditionals="11" coveredconditionals="10" methods="2" coveredmethods="2"/>
+        <line num="1" count="10" type="stmt"/>
+        <line num="2" count="10" type="stmt"/>
+        <line num="4" count="10" type="stmt"/>
+        <line num="9" count="20" type="stmt"/>
+        <line num="11" count="266" type="stmt"/>
+        <line num="13" count="266" type="cond" truecount="2" falsecount="0"/>
+        <line num="15" count="266" type="cond" truecount="1" falsecount="0"/>
+        <line num="16" count="25" type="stmt"/>
+        <line num="18" count="25" type="stmt"/>
+        <line num="20" count="25" type="stmt"/>
+        <line num="23" count="241" type="stmt"/>
+        <line num="28" count="20" type="stmt"/>
+        <line num="29" count="20" type="stmt"/>
+        <line num="31" count="20" type="cond" truecount="1" falsecount="0"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="35" count="20" type="cond" truecount="2" falsecount="1"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="44" count="20" type="cond" truecount="1" falsecount="0"/>
+        <line num="45" count="4" type="stmt"/>
+        <line num="53" count="16" type="cond" truecount="3" falsecount="0"/>
+        <line num="54" count="2" type="stmt"/>
+        <line num="57" count="14" type="stmt"/>
+      </file>
+      <file name="validate-bar-code.ts" path="/home/alopes/Documents/projects/ewally/bank-slip-generator/src/infra/helpers/validate-bar-code.ts">
+        <metrics statements="20" coveredstatements="19" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="1" count="8" type="stmt"/>
+        <line num="2" count="8" type="stmt"/>
+        <line num="3" count="8" type="stmt"/>
+        <line num="4" count="8" type="stmt"/>
+        <line num="5" count="8" type="stmt"/>
+        <line num="6" count="5" type="cond" truecount="1" falsecount="0"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="12" count="3" type="stmt"/>
+        <line num="14" count="3" type="cond" truecount="0" falsecount="1"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="23" count="3" type="stmt"/>
+        <line num="26" count="2" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
+        <line num="29" count="2" type="stmt"/>
+        <line num="30" count="2" type="stmt"/>
+        <line num="32" count="2" type="stmt"/>
+        <line num="34" count="2" type="stmt"/>
+      </file>
+      <file name="validate-digitable-line-code.ts" path="/home/alopes/Documents/projects/ewally/bank-slip-generator/src/infra/helpers/validate-digitable-line-code.ts">
+        <metrics statements="12" coveredstatements="12" conditionals="5" coveredconditionals="5" methods="1" coveredmethods="1"/>
+        <line num="1" count="8" type="stmt"/>
+        <line num="2" count="8" type="stmt"/>
+        <line num="4" count="8" type="stmt"/>
+        <line num="5" count="19" type="stmt"/>
+        <line num="7" count="19" type="cond" truecount="2" falsecount="0"/>
+        <line num="9" count="19" type="cond" truecount="1" falsecount="0"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="18" count="18" type="cond" truecount="1" falsecount="0"/>
+        <line num="19" count="8" type="stmt"/>
+        <line num="27" count="10" type="cond" truecount="1" falsecount="0"/>
+        <line num="28" count="3" type="stmt"/>
+        <line num="36" count="7" type="stmt"/>
+      </file>
+      <file name="validate-field.ts" path="/home/alopes/Documents/projects/ewally/bank-slip-generator/src/infra/helpers/validate-field.ts">
+        <metrics statements="12" coveredstatements="11" conditionals="5" coveredconditionals="3" methods="1" coveredmethods="1"/>
+        <line num="1" count="8" type="stmt"/>
+        <line num="2" count="8" type="stmt"/>
+        <line num="3" count="8" type="stmt"/>
+        <line num="10" count="16" type="stmt"/>
+        <line num="11" count="16" type="stmt"/>
+        <line num="12" count="16" type="stmt"/>
+        <line num="13" count="16" type="stmt"/>
+        <line num="15" count="16" type="cond" truecount="2" falsecount="1"/>
+        <line num="17" count="16" type="cond" truecount="1" falsecount="1"/>
+        <line num="18" count="16" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="23" count="13" type="stmt"/>
+      </file>
+      <file name="validate-four-fields.ts" path="/home/alopes/Documents/projects/ewally/bank-slip-generator/src/infra/helpers/validate-four-fields.ts">
+        <metrics statements="16" coveredstatements="16" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="7" type="stmt"/>
+        <line num="3" count="7" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+      </file>
+      <file name="validate-three-fields.ts" path="/home/alopes/Documents/projects/ewally/bank-slip-generator/src/infra/helpers/validate-three-fields.ts">
+        <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="7" type="stmt"/>
+        <line num="3" count="7" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="6" count="4" type="stmt"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="9" count="4" type="stmt"/>
+        <line num="10" count="4" type="stmt"/>
+        <line num="11" count="4" type="stmt"/>
+        <line num="13" count="4" type="stmt"/>
+        <line num="14" count="4" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="infra.model">
+      <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.ts" path="/home/alopes/Documents/projects/ewally/bank-slip-generator/src/infra/model/index.ts">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="infra.respositories">
+      <metrics statements="19" coveredstatements="19" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      <file name="index.ts" path="/home/alopes/Documents/projects/ewally/bank-slip-generator/src/infra/respositories/index.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="5" type="stmt"/>
+      </file>
+      <file name="load-bank-slip-repository.ts" path="/home/alopes/Documents/projects/ewally/bank-slip-generator/src/infra/respositories/load-bank-slip-repository.ts">
+        <metrics statements="18" coveredstatements="18" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="2" count="6" type="stmt"/>
+        <line num="13" count="6" type="stmt"/>
+        <line num="15" count="8" type="stmt"/>
+        <line num="16" count="3" type="stmt"/>
+        <line num="18" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="42" count="1" type="stmt"/>
+        <line num="44" count="1" type="stmt"/>
+        <line num="46" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="main">
+      <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="index.ts" path="/home/alopes/Documents/projects/ewally/bank-slip-generator/src/main/index.ts">
+        <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="main.adapters">
+      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="express-router-adapter.ts" path="/home/alopes/Documents/projects/ewally/bank-slip-generator/src/main/adapters/express-router-adapter.ts">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="3" count="5" type="stmt"/>
+        <line num="5" count="5" type="stmt"/>
+        <line num="6" count="5" type="stmt"/>
+        <line num="11" count="5" type="stmt"/>
+        <line num="12" count="5" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/home/alopes/Documents/projects/ewally/bank-slip-generator/src/main/adapters/index.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="5" type="stmt"/>
+      </file>
+    </package>
+    <package name="main.composers">
+      <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="index.ts" path="/home/alopes/Documents/projects/ewally/bank-slip-generator/src/main/composers/index.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="5" type="stmt"/>
+      </file>
+      <file name="load-bank-slip-router-composer.ts" path="/home/alopes/Documents/projects/ewally/bank-slip-generator/src/main/composers/load-bank-slip-router-composer.ts">
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="5" type="stmt"/>
+        <line num="2" count="5" type="stmt"/>
+        <line num="3" count="5" type="stmt"/>
+        <line num="5" count="5" type="stmt"/>
+        <line num="7" count="5" type="stmt"/>
+        <line num="9" count="5" type="stmt"/>
+        <line num="11" count="5" type="stmt"/>
+      </file>
+    </package>
+    <package name="main.config">
+      <metrics statements="28" coveredstatements="28" conditionals="2" coveredconditionals="2" methods="7" coveredmethods="7"/>
+      <file name="app.ts" path="/home/alopes/Documents/projects/ewally/bank-slip-generator/src/main/config/app.ts">
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="5" type="stmt"/>
+        <line num="3" count="5" type="stmt"/>
+        <line num="4" count="5" type="stmt"/>
+        <line num="6" count="5" type="stmt"/>
+        <line num="8" count="5" type="stmt"/>
+        <line num="9" count="5" type="stmt"/>
+        <line num="11" count="5" type="stmt"/>
+      </file>
+      <file name="env.ts" path="/home/alopes/Documents/projects/ewally/bank-slip-generator/src/main/config/env.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="0" coveredmethods="0"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/home/alopes/Documents/projects/ewally/bank-slip-generator/src/main/config/index.ts">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+      </file>
+      <file name="routes.ts" path="/home/alopes/Documents/projects/ewally/bank-slip-generator/src/main/config/routes.ts">
+        <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="1" count="5" type="stmt"/>
+        <line num="3" count="5" type="stmt"/>
+        <line num="5" count="5" type="stmt"/>
+        <line num="7" count="5" type="stmt"/>
+        <line num="8" count="5" type="stmt"/>
+        <line num="9" count="5" type="stmt"/>
+        <line num="10" count="5" type="stmt"/>
+        <line num="14" count="5" type="stmt"/>
+      </file>
+      <file name="setup.ts" path="/home/alopes/Documents/projects/ewally/bank-slip-generator/src/main/config/setup.ts">
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="2" count="5" type="stmt"/>
+        <line num="4" count="5" type="stmt"/>
+        <line num="5" count="5" type="stmt"/>
+        <line num="6" count="5" type="stmt"/>
+        <line num="7" count="5" type="stmt"/>
+        <line num="8" count="5" type="stmt"/>
+        <line num="11" count="5" type="stmt"/>
+      </file>
+    </package>
+    <package name="main.middlewares">
+      <metrics statements="13" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="content-type.ts" path="/home/alopes/Documents/projects/ewally/bank-slip-generator/src/main/middlewares/content-type.ts">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="6" type="stmt"/>
+        <line num="8" count="8" type="stmt"/>
+        <line num="9" count="8" type="stmt"/>
+      </file>
+      <file name="cors.ts" path="/home/alopes/Documents/projects/ewally/bank-slip-generator/src/main/middlewares/cors.ts">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="6" type="stmt"/>
+        <line num="4" count="8" type="stmt"/>
+        <line num="5" count="8" type="stmt"/>
+        <line num="6" count="8" type="stmt"/>
+        <line num="7" count="8" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/home/alopes/Documents/projects/ewally/bank-slip-generator/src/main/middlewares/index.ts">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="6" type="stmt"/>
+        <line num="2" count="6" type="stmt"/>
+        <line num="3" count="6" type="stmt"/>
+      </file>
+      <file name="json-parser.ts" path="/home/alopes/Documents/projects/ewally/bank-slip-generator/src/main/middlewares/json-parser.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="6" type="stmt"/>
+        <line num="3" count="6" type="stmt"/>
+      </file>
+    </package>
+    <package name="main.routes">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="load-bank-slip-routes.ts" path="/home/alopes/Documents/projects/ewally/bank-slip-generator/src/main/routes/load-bank-slip-routes.ts">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="2" count="5" type="stmt"/>
+        <line num="3" count="5" type="stmt"/>
+        <line num="5" count="5" type="stmt"/>
+        <line num="6" count="5" type="stmt"/>
+      </file>
+    </package>
+    <package name="presentation.helpers">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="http-response.ts" path="/home/alopes/Documents/projects/ewally/bank-slip-generator/src/presentation/helpers/http-response.ts">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="1" count="6" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="10" count="10" type="stmt"/>
+      </file>
+    </package>
+    <package name="presentation.routers">
+      <metrics statements="10" coveredstatements="10" conditionals="1" coveredconditionals="1" methods="2" coveredmethods="2"/>
+      <file name="load-bank-slip-router.ts" path="/home/alopes/Documents/projects/ewally/bank-slip-generator/src/presentation/routers/load-bank-slip-router.ts">
+        <metrics statements="10" coveredstatements="10" conditionals="1" coveredconditionals="1" methods="2" coveredmethods="2"/>
+        <line num="2" count="6" type="stmt"/>
+        <line num="3" count="6" type="stmt"/>
+        <line num="10" count="6" type="stmt"/>
+        <line num="14" count="11" type="stmt"/>
+        <line num="18" count="11" type="stmt"/>
+        <line num="19" count="11" type="stmt"/>
+        <line num="21" count="11" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="25" count="10" type="cond" truecount="1" falsecount="0"/>
+        <line num="26" count="10" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

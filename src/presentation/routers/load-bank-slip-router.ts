@@ -25,7 +25,7 @@ export class LoadBankSlipRouter {
       if (error instanceof AppError) {
         return HttpResponse[error.name](error);
       }
-      return error;
+
     }
   }
 }
